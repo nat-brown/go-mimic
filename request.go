@@ -20,7 +20,6 @@ func (r request) key() ([md5.Size]byte, error) {
 		if err != nil {
 			return [md5.Size]byte{}, fmt.Errorf("error marshalling body for key: %v", err)
 		}
-		fmt.Println(string(body))
 		bytes = append(bytes, body...)
 	}
 	return md5.Sum(bytes), nil

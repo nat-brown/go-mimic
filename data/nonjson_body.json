@@ -1,0 +1,11 @@
+{
+    "notes": "This tests non-json requests are possible",
+    "request": {
+        "url": "non.json",
+        "method": "POST",
+        "body": "--This is a message rather than json--"
+    },
+    "response": {
+        "status_code": 200000
+    }
+}

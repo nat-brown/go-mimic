@@ -35,12 +35,12 @@ func TestResponsesGet(t *testing.T) {
 		{StatusCode: 1},
 	}
 	resp, ok := rs.Get()
-	assert.True(t, ok)
-	assert.Equal(t, rs.list[0], resp)
+	require.True(t, ok)
+	assert.Equal(t, &rs.list[0], resp)
 	assert.Equal(t, 1, rs.called)
 
 	resp, ok = rs.Get()
 	assert.False(t, ok)
-	assert.Equal(t, response{}, resp)
+	assert.Nil(t, resp)
 	assert.Equal(t, 1, rs.called)
 }

@@ -9,7 +9,7 @@ import (
 )
 
 type accessor interface {
-	Get() (response, bool)
+	Get() (*response, bool)
 	Set(response)
 }
 
@@ -27,6 +27,18 @@ func newReader() reader {
 	return reader{
 		cache: map[[md5.Size]byte]accessor{},
 	}
+}
+
+func (r *reader) getFromRequest(req request) (resp *response, ok bool) {
+	key, err := req.key()
+	if err != nil {
+		return resp, false
+	}
+	_, ok = r.cache[key]
+	if !ok {
+		return resp, false
+	}
+	return r.cache[key].Get()
 }
 
 // Initialize defends against actions on nil attributes.
