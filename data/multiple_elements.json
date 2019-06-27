@@ -1,0 +1,32 @@
+[
+    {
+        "notes": "This will be the response of the first call.",
+        "request": {
+            "url": "http://multi",
+            "method": "GET"
+        },
+        "response": {
+            "status_code": 200
+        }
+    }, 
+    {
+        "notes": "You might want to mimic a failure part way into a process.",
+        "request": {
+            "url": "http://multi",
+            "method": "GET"
+        },
+        "response": {
+            "status_code": 500
+        }
+    },
+    {
+        "notes": "You can store an entire session in one file.",
+        "request": {
+            "url": "http://something.else",
+            "method": "GET"
+        },
+        "response": {
+            "status_code": 404
+        }
+    }
+]

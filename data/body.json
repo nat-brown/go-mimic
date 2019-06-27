@@ -1,0 +1,20 @@
+[
+    {
+        "notes": "This file tests request and response body unmarshaling.",
+        "request": {
+            "method": "POST",
+            "url": "http://test.body",
+            "body": {
+                "key": "value",
+                "list": [1, 2, 4],
+                "boolean": true
+            }
+        },
+        "response": {
+            "status_code": 200,
+            "body": {
+                "status": "success"
+            }
+        }
+    }
+]

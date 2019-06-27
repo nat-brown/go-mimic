@@ -1,0 +1,12 @@
+[
+    {
+        "notes": "The bad formatting is from the response status code",
+        "request": {
+            "url": "http://anything.com",
+            "method": "PUT"
+        },
+        "response": {
+            "status_code": "200"
+        }
+    }
+]

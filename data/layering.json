@@ -1,0 +1,10 @@
+{
+    "notes": "This will be the response of the first call.",
+    "request": {
+        "url": "http://multi",
+        "method": "GET"
+    },
+    "response": {
+        "status_code": 201
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "notes": "This tests the most basic use case.",
+    "request": {
+        "url": "http://url.test",
+        "method": "GET"
+    },
+    "response": {
+        "status_code": 200
+    }
+}
