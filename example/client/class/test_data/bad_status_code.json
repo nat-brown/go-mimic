@@ -1,0 +1,10 @@
+{
+    "notes": "This tests that the api errors correctly when it receives a bad status code from its dependency.",
+    "request": {
+        "url": "http://localhost:3000/class/recipes",
+        "method": "GET"
+    },
+    "response": {
+        "status_code": 500
+    }
+}

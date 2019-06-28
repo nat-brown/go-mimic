@@ -1,0 +1,33 @@
+{
+    "notes": "This tests a basic case and assumes a single item list is as good as a multi-item one.",
+    "request": {
+        "url": "http://localhost:3000/class/recipes",
+        "method": "GET"
+    },
+    "response": {
+        "status_code": 200,
+        "body": [
+            {
+                "directions": "Spray the pan with 2 cans of oil. Put the dough on the pan. Put the olives on the dough. Put the pan in the oven at 10 degrees. Cook for 2 hours.",
+                "ingredients": [
+                   {
+                        "name": "Dough from Meijer",
+                        "quantity": 0,
+                        "units": ""
+                    },
+                    {
+                        "name": "crushed up olives",
+                        "quantity": 10.0,
+                        "units": ""
+                    },
+                    {
+                        "name": "oil",
+                        "quantity": 2,
+                        "unit": "cans"
+                    }
+                ],
+                "title": "Phillip's Pizza"
+            }
+        ]
+    }
+}

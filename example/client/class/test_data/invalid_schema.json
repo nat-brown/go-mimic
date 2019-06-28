@@ -1,0 +1,23 @@
+{
+    "notes": "This tests error handling for incorrect schemas. Note that the quantity is a string rather than int or float.",
+    "request": {
+        "url": "http://localhost:3000/class/recipes",
+        "method": "GET"
+    },
+    "response": {
+        "status_code": 200,
+        "body": [
+            {
+                "directions": "",
+                "ingredients": [
+                   {
+                        "name": "",
+                        "quantity": "0",
+                        "units": ""
+                    }
+                ],
+                "title": ""
+            }
+        ]
+    }
+}

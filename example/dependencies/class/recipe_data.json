@@ -1,0 +1,177 @@
+[
+    {
+        "directions": "Put the seasonings on the turkey before you put it in an oven at 50 degrees. Cook it for 5 hours. Put it on a tray and cut it up with a knife.",
+        "ingredients": [
+            {
+                "name": "turkey from the store",
+                "quantity": 1
+            },
+            {
+                "name": "seasonings",
+                "quantity": 10,
+                "unit": "handfuls"
+            }
+        ],
+        "title": "Carson's Turkey"
+    },
+    {
+        "directions": "Put the lettuce and ranch in a bowl. We could heat it up if it is cold, maybe in the microwave for like 4 minutes. Stir it up to make sure it's not so hot. Now I usually put it on a plate and eat it!",
+        "ingredients": [
+            {
+                "name": "Lettuces",
+                "quantity": 5
+            },
+            {
+                "name": "Ranch Dressings",
+                "quantity": 4
+            }
+        ],
+        "title": "Bella's Salad"
+    },
+    {
+        "directions": "Well this is how I make corn. It's kinda dangerous and kinda yucky! So ya put logs in a pile and you burn it up in a fire. Then, you get a person to help you. You cook the corn with roast beef on a stove thing on the fire. The seeds go on the corn now. When the fire is out you can eat it!",
+        "ingredients": [
+            {
+                "name": "corns",
+                "quantity": 20
+            },
+            {
+                "name": "regular seeds",
+                "quantity": 33
+            }
+        ],
+        "title": "Harper's Corn"
+    },
+    {
+        "directions": "First you mix it all up in the bowl with a mixer or a spoon. Mommy puts them in the oven. Our oven is not that hot. They have to stay in there I think probably 8 minutes. Take them out and then you can put them on a plate and eat them!! Don't forget to lick the bowl! It's soooo good!",
+        "ingredients": [
+            {
+                "name": "chocolate",
+                "quantity": 3,
+                "unit": "teaspoons"
+            },
+            {
+                "name": "sugar",
+                "quantity": 2,
+                "unit": "loads"
+            },
+            {
+                "name": "flour",
+                "quantity": 4,
+                "unit": "teaspoons"
+            },
+            {
+                "name": "the brown stuff that looks like sugar",
+                "quantity": 1,
+                "unit": "scoop"
+            },
+            {
+                "name": "water",
+                "quantity": 1,
+                "unit": "load"
+            }
+        ],
+        "title": "Gracie's Brownies"
+    },
+    {
+        "directions": "You can sometimes cut the potatoes with a fork if they are too big. Pour them in a bowl with all the other stuff and cook them in the microwave for 5 minutes. Mix it all up with a spoon. Then mash them with a fork. Now they are ready to eat! These are my favorite!",
+        "ingredients": [
+            {
+                "name": "potatoes",
+                "quantity": 5
+            },
+            {
+                "name": "milk",
+                "quantity": 1,
+                "unit": "gallon"
+            },
+            {
+                "name": "butter",
+                "quantity": 5,
+                "unit": "pieces"
+            },
+            {
+                "name": "salt",
+                "unit": "a little bit"
+            }
+        ],
+        "title": "Layla's Mashed Potatoes"
+    },
+    {
+        "directions": "Cook them on the stove in a pan for 30 minutes. Put the turkey on the table and the peas in a bowl. Put corn with it and also biscuits and gravy. That's my Thanksgiving meal!!",
+        "ingredients": [
+            {
+                "name": "peas that you pick out of the garden when they are green",
+                "quantity": 13
+            },
+            {
+                "name": "Put in some pepper and that's all. Maybe like 15 of them."
+            }
+        ],
+        "title": "Wayden's Peas"
+    },
+    {
+        "directions": "Put the chocolate and the flour in a bowl and stir with a spoon. Pour it out of the bowl on the cake part. Flatten it all out with a spoon on the side you don't eat with. Now you have to put it in the oven. It only needs to be half hot. Set the timer for 2 or 3 minutes. Take it out and you have a chocolate pie! Dip the icing on the pie with a spoon for decoration. Put it on a plate and now you can eat chocolate pie!",
+        "ingredients": [
+            {
+                "name": "regular chocolate",
+                "quantity": 1,
+                "unit": "gallon"
+            },
+            {
+                "name": "flour",
+                "quantity": 0.5,
+                "unit": "gallon"
+            },
+            {
+                "name": "white icing",
+                "quantity": 0.5,
+                "unit": "gallon"
+            },
+            {
+                "name": "Cake on the bottom"
+            }
+        ],
+        "title": "Ragen's Chocolate Pie"
+    },
+    {
+        "directions": "Set the bread in a bowl. Put it in the oven at 5 degrees for 1 minute. Put butter on it and now you eat it!",
+        "ingredients": [
+            {
+                "name": "bread",
+                "quantity": 2
+            }
+        ],
+        "title": "Bentley's Rolls"
+    },
+    {
+        "directions": "Use a mixer and mix it all up. Sprinkle more salt on the cookie dough. Cook them on a stove on a pan for 4 hours. Get them on a plate. Sprinkle more salt on them before you eat them.",
+        "ingredients": [
+            {
+                "name": "vanilla",
+                "quantity": 2,
+                "unit": "spoons"
+            },
+            {
+                "name": "eggs",
+                "quantity": 3
+            },
+            {
+                "name": "chocolate",
+                "quantity": 4,
+                "unit": "spoons"
+            },
+            {
+                "name": "pepper",
+                "quantity": 2,
+                "unit": "spoons"
+            },
+            {
+                "name": "salt",
+                "quantity": 5,
+                "unit": "plates"
+            }
+        ],
+        "title": "Allison's Chocolate Cookies"
+    }
+]
