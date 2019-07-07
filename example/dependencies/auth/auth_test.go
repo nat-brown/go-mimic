@@ -25,7 +25,10 @@ func TestAuthIntegration(t *testing.T) {
 		body := bytes.NewReader([]byte(fmt.Sprintf(`{"username":"%s","password":"%s"}`, username, password)))
 		req, err := http.NewRequest(http.MethodPost, "/auth/token/", body)
 		require.NoError(t, err)
-		resp := test.Do(req)
+		resp := test.Do(test.Request{
+			Request: req,
+			Test:    t,
+		})
 		require.Equal(t, http.StatusOK, resp.StatusCode)
 
 		actual := struct {
@@ -45,7 +48,10 @@ func TestAuthIntegration(t *testing.T) {
 		body := bytes.NewReader([]byte(fmt.Sprintf(`{"token":"%s"}`, token)))
 		req, err := http.NewRequest(http.MethodPost, "/auth/verify/", body)
 		require.NoError(t, err)
-		resp := test.Do(req)
+		resp := test.Do(test.Request{
+			Request: req,
+			Test:    t,
+		})
 		require.Equal(t, http.StatusOK, resp.StatusCode)
 
 		actual := struct {
@@ -94,7 +100,10 @@ func TestAuthenticationNegative(t *testing.T) {
 			body := bytes.NewReader(tt.body)
 			req, err := http.NewRequest(http.MethodPost, "/auth/token/", body)
 			require.NoError(t, err)
-			resp := test.Do(req)
+			resp := test.Do(test.Request{
+				Request: req,
+				Test:    t,
+			})
 			assert.Equal(t, tt.statusCode, resp.StatusCode)
 			msg, err := ioutil.ReadAll(resp.Body)
 			require.NoError(t, err)
@@ -133,7 +142,10 @@ func TestVerificationNegative(t *testing.T) {
 			body := bytes.NewReader(tt.body)
 			req, err := http.NewRequest(http.MethodPost, "/auth/verify/", body)
 			require.NoError(t, err)
-			resp := test.Do(req)
+			resp := test.Do(test.Request{
+				Request: req,
+				Test:    t,
+			})
 			require.Equal(t, tt.statusCode, resp.StatusCode)
 			msg, err := ioutil.ReadAll(resp.Body)
 			require.NoError(t, err)

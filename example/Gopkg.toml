@@ -24,6 +24,7 @@
 #   go-tests = true
 #   unused-packages = true
 
+ignored = ["dmitri.shuralyov.com/text/kebabcase"]
 
 [prune]
   go-tests = true

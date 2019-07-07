@@ -14,6 +14,6 @@ var New = func() logrus.FieldLogger {
 func newInnerLogger() *logrus.Logger {
 	log := logrus.New()
 	log.Out = os.Stdout
-	log.Level = logrus.DebugLevel
+	log.Level = logrus.InfoLevel
 	return log
 }
