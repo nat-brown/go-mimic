@@ -6,8 +6,10 @@ import (
 	contenttype "github.com/gobuffalo/mw-contenttype"
 	paramlogger "github.com/gobuffalo/mw-paramlogger"
 	"github.com/gobuffalo/x/sessions"
+
+	"github.com/nat-brown/go-mimic/example/dependencies/auth"
 	"github.com/nat-brown/go-mimic/example/dependencies/class"
-	"github.com/rs/cors"
+	"github.com/nat-brown/go-mimic/example/dependencies/store"
 )
 
 // ENV is the app environment.
@@ -20,10 +22,7 @@ func New() *buffalo.App {
 		app = buffalo.New(buffalo.Options{
 			Env:          ENV,
 			SessionStore: sessions.Null{},
-			PreWares: []buffalo.PreWare{
-				cors.Default().Handler,
-			},
-			SessionName: "_deps_session",
+			SessionName:  "_deps_session",
 		})
 
 		// Log request parameters (filters apply).
@@ -33,6 +32,9 @@ func New() *buffalo.App {
 		app.Use(contenttype.Set("application/json"))
 
 		app.GET("/class/recipes", class.HandleRecipes)
+		app.GET("/store/ingredients/{ingredient}", store.Handle)
+		app.POST("/auth/token", auth.HandleAuthentication)
+		app.POST("/auth/verify", auth.HandleVerification)
 	}
 
 	return app

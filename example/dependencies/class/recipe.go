@@ -5,6 +5,7 @@ import (
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo/render"
+
 	"github.com/nat-brown/go-mimic/example/dependencies/database"
 )
 
