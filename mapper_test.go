@@ -5,6 +5,7 @@ import (
 	"crypto/md5"
 	"encoding/json"
 	"io"
+	"io/ioutil"
 	"net/http"
 	"path/filepath"
 	"testing"
@@ -38,7 +39,8 @@ func TestBasicMap(t *testing.T) {
 	require.NoError(t, err)
 
 	assert.Equal(t, http.StatusOK, resp.StatusCode)
-	assert.Nil(t, resp.Body)
+	assert.NotNil(t, resp.Body)
+	assert.Equal(t, ioutil.NopCloser(bytes.NewBuffer(nil)), resp.Body)
 }
 
 func TestMapNonJSON(t *testing.T) {

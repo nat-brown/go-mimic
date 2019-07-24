@@ -38,9 +38,7 @@ func (r *response) HTTPResponse() (*http.Response, error) {
 	resp := &http.Response{
 		StatusCode: r.StatusCode,
 	}
-	if body != nil {
-		resp.Body = ioutil.NopCloser(bytes.NewBuffer(body))
-	}
+	resp.Body = ioutil.NopCloser(bytes.NewBuffer(body))
 
 	return resp, nil
 }
