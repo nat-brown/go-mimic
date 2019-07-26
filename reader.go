@@ -10,6 +10,7 @@ import (
 
 type accessor interface {
 	Get() (*response, bool)
+	Open() bool
 	Set(response)
 }
 
